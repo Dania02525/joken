@@ -47,7 +47,7 @@ and not add or validate the others:
   defmodule My.Config.Module do
     @behaviour Joken.Config
 
-    def secret_key(), do: Application.get_env(:app, :secret_key) 
+    def secret_key(), do: "some secret key" 
     
     def algorithm(), do: :HS256
     
